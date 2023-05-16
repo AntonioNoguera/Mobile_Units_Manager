@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantallas"
+    tools:context=".cuenta_existente">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sublima_bold"
+        android:text="Cuenta\nExistente"
+        android:textAlignment="center"
+        android:textColor="@color/letrasColor"
+
+        android:layout_marginTop="46sp"
+
+        android:textSize="40sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:id="@+id/lblPlacas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sublima_light"
+
+            android:text="@string/nombre"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"  />
+
+        <TextView
+            android:id="@+id/txtPlacas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/sublima_light"
+
+            android:text="Lorem Ipsum"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/lblChofer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sublima_light"
+
+            android:text="@string/user"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"  />
+
+        <TextView
+            android:id="@+id/txtChofer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/sublima_light"
+
+            android:text="Lorem Ipsum"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/lblUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sublima_light"
+            android:text="@string/pass"
+
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sublima_light"
+            android:text="Lorem Ipsum"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"  />
+
+        <TextView
+            android:id="@+id/lblGasolina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+
+            android:fontFamily="@font/sublima_light"
+            android:text="@string/tipo"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"   />
+
+        <TextView
+            android:id="@+id/txtGasolina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sublima_light"
+
+            android:text="Lorem Ipsum"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEliminarCuenta"
+            android:layout_width="wrap_content"
+
+            android:layout_height="30sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginBottom="10sp"
+
+            android:background="@drawable/btn_continuar"
+            android:fontFamily="@font/sublima_bold"
+            android:paddingHorizontal="20sp"
+            android:text="Eliminar USUARIO"
+            android:textColor="@drawable/btn_continuar_texto"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"
+        android:layout_marginBottom="46sp"
+        android:background="@drawable/btn_regresar"
+        android:fontFamily="@font/sublima_bold"
+
+        android:text="Volver"
+        android:textColor="@drawable/btn_regresar_texto"
+        android:textSize="25sp"  />
+
+</RelativeLayout>

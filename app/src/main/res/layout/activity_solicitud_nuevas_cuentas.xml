@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantallas"
+    tools:context=".solicitud_nuevas_cuentas">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sublima_bold"
+        android:text="Solicitudes de\nNuevos Usuarios"
+        android:textAlignment="center"
+        android:textColor="@color/letrasColor"
+        android:layout_marginTop="46sp"
+
+        android:textSize="40sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sublima_light"
+
+            android:text="@string/nombre"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15sp"
+            android:fontFamily="@font/sublima_light"
+
+            android:text="FFFFF"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/lblUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sublima_light"
+
+            android:text="@string/user"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15sp"
+            android:fontFamily="@font/sublima_light"
+
+            android:text="Lorem Ipsum"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/lblContra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sublima_light"
+            android:text="@string/pass"
+
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtContra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sublima_light"
+            android:text="Desconocido"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/lblCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+
+            android:fontFamily="@font/sublima_light"
+            android:text="@string/tipo"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutNCUENTA"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginHorizontal="40sp"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/estilo_inputs"
+
+            android:hint="@string/dropDownSelect"
+            android:inputType="none"
+            android:paddingLeft="10sp"
+            android:paddingTop="2sp"
+
+            android:textColorHint="@color/white"
+            android:theme="@style/Spinner">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/dropTipoCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginBottom="20px"
+
+                android:fontFamily="@font/sublima_light"
+                android:inputType="none"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:orientation="horizontal" >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRechazar"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+
+                android:layout_alignParentLeft="true"
+
+                android:layout_marginLeft="40sp"
+
+
+                android:background="@drawable/btn_continuar"
+                android:fontFamily="@font/sublima_bold"
+                android:paddingHorizontal="40sp"
+                android:text="Rechazar"
+                android:textColor="@drawable/btn_continuar_texto"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:id="@+id/admState"
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                android:visibility="invisible"
+                >
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAceptar"
+                android:layout_width="wrap_content"
+
+                android:layout_height="40sp"
+
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40sp"
+                android:background="@drawable/btn_confirmar"
+
+                android:enabled="false"
+                android:fontFamily="@font/sublima_bold"
+                android:paddingHorizontal="40sp"
+                android:text="Aceptar"
+                android:textColor="@drawable/btn_confirmar_textp"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btn_regresar"
+        android:fontFamily="@font/sublima_bold"
+
+        android:text="Volver"
+        android:textColor="@drawable/btn_regresar_texto"
+        android:textSize="25sp" />
+</RelativeLayout>

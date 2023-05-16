@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_pantallas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fullSizeImage">
+    <ImageView
+        android:id="@+id/targetImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingHorizontal="10dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnVolver"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginBottom="46sp"
+        android:background="@drawable/btn_regresar"
+        android:fontFamily="@font/sublima_bold"
+
+        android:text="Volver"
+        android:textColor="@drawable/btn_regresar_texto"
+        android:textSize="25sp" />
+</RelativeLayout>

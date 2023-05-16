@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantallas"
+    tools:context=".MainActivity"
+
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36sp"
+            android:fontFamily="@font/sublima_bold"
+            android:text="Administrador\nde Unidades\nMóviles"
+            android:textAlignment="center"
+
+            android:textColor="@color/letrasColor"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            >
+
+            <TextView
+                android:id="@+id/encabezadoUser"
+
+                android:layout_marginTop="50sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sublima_bold"
+                android:text="Usuario:"
+                android:textAlignment="center"
+
+
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/TxtUser"
+                android:layout_width="match_parent"
+
+                android:layout_height="60sp"
+                android:layout_marginStart="50sp"
+
+                android:layout_marginEnd="50sp"
+                android:background="@drawable/estilo_inputs"
+                android:fontFamily="@font/sublima_light"
+                android:hint="ej. Jose2023"
+                android:inputType="textPersonName"
+                android:maxLength="15"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/placeHolderColor"
+                android:textCursorDrawable="@drawable/cursor_color"
+
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/encabezadoPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/sublima_bold"
+                android:text="Contraseña:"
+
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/txtContra"
+                android:layout_width="match_parent"
+
+                android:layout_height="60sp"
+                android:layout_marginHorizontal="50sp"
+
+                android:background="@drawable/estilo_inputs"
+                android:fontFamily="@font/sublima_light"
+                android:hint="******"
+
+
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/placeHolderColor"
+                android:textCursorDrawable="@drawable/cursor_color"
+
+                android:textSize="35sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_alignParentBottom="true"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/btnIngresar"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50sp"
+
+                android:background="@drawable/btn_continuar"
+                android:fontFamily="@font/sublima_bold"
+                android:text="Ingresar"
+                android:textColor="@drawable/btn_continuar_texto"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/txtNuevaCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/sublima_light"
+                android:text="@string/pseudohiperlink"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/pseudo_hiperlink"
+                android:textColorHint="@color/placeHolderColor"
+                android:textSize="20sp"
+                android:layout_marginBottom="36sp"
+
+                android:layout_below="@id/btnIngresar"
+                />
+
+
+
+
+        </LinearLayout>
+</RelativeLayout>
+
+
