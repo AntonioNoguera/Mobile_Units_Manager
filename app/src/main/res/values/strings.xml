@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Adm. Unidades Móviles</string>
+
+    <string name="pseudohiperlink"><u><i><b>¿No tienes una cuenta?, ¡create una!</b> </i></u></string>
+    <string name="nCuentas"><i><b>Nuevas Cuentas:</b></i></string>
+    <string name="eCuentas"><i><b>Cuentas Existentes:</b></i></string>
+    <string name="unidadesD"><i><b>Unidades Disponibles:</b></i></string>
+    <string name="dropDownSelect"><i>Seleccione una cuenta</i></string>
+
+    <string name="headerImg"><i>Es hora de capturar el:</i></string>
+
+
+    <string name="dropDownSelectUnidad"><i>Seleccione una Unidad</i></string>
+
+
+    <!-- Estado Unidades-->
+    <string name="placas"><i><b>Placas de la Unidad:</b></i></string>
+    <string name="chofer"><i><b>Chofer Actual:</b></i></string>
+    <string name="ubicacion"><i><b>Ubicación de la Unidad:</b></i></string>
+    <string name="gasolina"><i><b>Nivel de Gasolina:</b></i></string>
+
+    <!--Detalles Avanzados -->
+    <string name="neumaticos"><i><b>Estado de los Neumáticos:</b></i></string>
+    <string name="carroceria"><i><b>Carrocería:</b></i></string>
+    <string name="interiores"><i><b>Limpieza de los Interiores:</b></i></string>
+    <string name="Ultimo"><i><b>Último chequeo de Aceites:</b></i></string>
+    <string name="kilometraje"><i><b>Kilometraje:</b></i></string>
+
+
+    <string name="nUnidades"><i><b>Añadir Nuevas Unidades:</b></i></string>
+    <string name="eUnidades"><i><b>Unidades Existentes:</b></i></string>
+
+
+    <string name="nombre"><i><b>Nombre Completo:</b></i></string>
+    <string name="user"><i><b>Nombre de Usuario:</b></i></string>
+    <string name="pass"><i><b>Contraseña:</b></i></string>
+    <string name="tipo"><i><b>Tipo de Cuenta:</b></i></string>
+
+    <string name="dropdownPlacas"><i><b>Placas Disponibles</b></i></string>
+
+    <string name="dropdownOption"><i><b>Seleccione la mejor opción</b></i></string>
+</resources>

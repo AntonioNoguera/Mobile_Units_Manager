@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantallas"
+    tools:context=".nueva_unidad">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sublima_bold"
+        android:text="Nueva\nUnidad"
+        android:textAlignment="center"
+        android:textColor="@color/letrasColor"
+
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/lblPlacas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="80sp"
+        android:fontFamily="@font/sublima_light"
+        android:text="@string/placas"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblCarroceria"
+        tools:layout_editor_absoluteX="64sp" />
+
+
+    <EditText
+        android:id="@+id/inputPlacas"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+
+        android:layout_marginHorizontal="40sp"
+        android:background="@drawable/estilo_inputs"
+        android:fontFamily="@font/sublima_light"
+
+        android:hint="XXX-45-40"
+
+        android:inputType="textPersonName"
+        android:maxLength="8"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/placeHolderColor"
+        android:textCursorDrawable="@drawable/cursor_color"
+
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPlacas" />
+
+    <TextView
+        android:id="@+id/lblCarroceria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sublima_light"
+
+        android:text="@string/carroceria"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolver"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.405"
+        tools:layout_editor_absoluteX="0sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutNCUENTA"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginHorizontal="40sp"
+        android:layout_marginTop="2sp"
+
+        android:background="@drawable/estilo_inputs"
+        android:hint="@string/dropdownOption"
+        android:inputType="none"
+        android:paddingLeft="10sp"
+
+        android:paddingTop="2sp"
+        android:textColorHint="@color/white"
+        android:theme="@style/Spinner"
+        app:layout_constraintTop_toBottomOf="@+id/lblCarroceria"
+        tools:layout_editor_absoluteX="40sp">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/dropCarroceriaNuevo"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginBottom="20px"
+
+            android:fontFamily="@font/sublima_light"
+            android:inputType="none"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lblChofer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:fontFamily="@font/sublima_light"
+        android:text="@string/kilometraje"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/lblCarroceria"
+        tools:layout_editor_absoluteX="122sp" />
+
+    <EditText
+        android:id="@+id/inputKilometraje"
+        android:layout_width="match_parent"
+
+        android:layout_height="60sp"
+        android:layout_marginHorizontal="40sp"
+
+        android:background="@drawable/estilo_inputs"
+        android:fontFamily="@font/sublima_light"
+        android:hint="6'123,000"
+        android:inputType="number"
+        android:maxLength="9"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/placeHolderColor"
+        android:textCursorDrawable="@drawable/cursor_color"
+
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblChofer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40sp"
+        android:paddingHorizontal="20sp"
+        android:layout_marginBottom="40sp"
+        android:background="@drawable/btn_regresar"
+        android:fontFamily="@font/sublima_bold"
+
+        android:text="Volver"
+        android:textColor="@drawable/btn_regresar_texto"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinuar"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40sp"
+        android:layout_marginBottom="40sp"
+        android:background="@drawable/btn_continuar"
+        android:fontFamily="@font/sublima_bold"
+        android:paddingHorizontal="20sp"
+
+        android:text="Finalizar"
+        android:textColor="@drawable/btn_continuar_texto"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdministradorDeUnidadesMóvilesE2023"
+        tools:targetApi="31">
+        <activity
+            android:name=".fullSizeImage"
+            android:exported="false" />
+        <activity
+            android:name=".testing"
+            android:exported="true"></activity>
+        <activity
+            android:name=".nueva_unidad"
+            android:exported="true" />
+        <activity
+            android:name=".captura_de_imagenes"
+            android:exported="true" />
+        <activity
+            android:name=".inicio_turno_empleado"
+            android:exported="true" />
+        <activity
+            android:name=".main_empleado"
+            android:exported="true" />
+        <activity
+            android:name=".unidad_existente"
+            android:exported="true" />
+        <activity
+            android:name=".cuenta_existente"
+            android:exported="true" />
+        <activity
+            android:name=".solicitud_nuevas_cuentas"
+            android:exported="true" />
+        <activity
+            android:name=".administrar_unidades"
+            android:exported="true" />
+        <activity
+            android:name=".imagenes_unidad"
+            android:exported="true" />
+        <activity
+            android:name=".detalles_avanzados"
+            android:exported="true" />
+        <activity
+            android:name=".estado_unidades"
+            android:exported="true" />
+        <activity
+            android:name=".historial_unidades"
+            android:exported="true" />
+        <activity
+            android:name=".solicitudes_cuentas"
+            android:exported="true" />
+        <activity
+            android:name=".main_administrador"
+            android:exported="true" />
+        <activity
+            android:name=".nuevo_usuario"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
